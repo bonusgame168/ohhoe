@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+import './globals.css'
+import theme from './theme'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import { CssBaseline, ThemeProvider } from '@mui/material'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body suppressHydrationWarning={true}>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
