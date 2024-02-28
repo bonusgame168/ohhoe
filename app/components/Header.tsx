@@ -1,5 +1,4 @@
-import { AppBar, Toolbar, IconButton, Typography, Button, Container, Box } from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu'
+import { AppBar, Toolbar, Button, Container, Box } from '@mui/material'
 import React from 'react'
 import Image from 'next/image'
 
@@ -16,14 +15,14 @@ const Header = () => {
 
             <Box className='flex items-center gap-x-2'>
               <Link href='/'>
-                <Button className='hidden md:block text-white'>หน้าหลัก</Button>
+                <Button className='hidden sm:block text-white'>หน้าหลัก</Button>
               </Link>
               <Link href='/#promotion'>
-                <Button className='hidden md:block text-white'>โปรโมชั่น</Button>
+                <Button className='hidden sm:block text-white'>โปรโมชั่น</Button>
               </Link>
-              <Link href='/article'>
-                <Button className='hidden md:block text-white'>บทความ</Button>
-              </Link>
+              {/* <Link href='/article'> */}
+              <Button className='hidden sm:block text-white'>บทความ</Button>
+              {/* </Link> */}
               <Link href='https://member.bonusgames168.com/'>
                 <Button
                   variant='contained'
@@ -35,7 +34,7 @@ const Header = () => {
               <Link href='https://member.bonusgames168.com/register'>
                 <Button
                   variant='contained'
-                  className='hidden md:block transition duration-100 hover:scale-105 hover:shadow-[#FF4646_0px_0px_15px_4px] bg-[#FF4646] hover:bg-[#ff0000] rounded-xl border border-solid border-white text-lg shadow-none'
+                  className='hidden sm:block transition duration-100 hover:scale-105 hover:shadow-[#FF4646_0px_0px_15px_4px] bg-[#FF4646] hover:bg-[#ff0000] rounded-xl border border-solid border-white text-lg shadow-none'
                 >
                   สมัครสมาชิก
                 </Button>

@@ -11,3 +11,25 @@
 html {
   scroll-behavior: smooth;
 }
+
+@layer utilities {
+  .silver-gradient-border {
+    border-image: linear-gradient(90deg, rgba(139, 139, 139, 1) 0%, rgba(103, 103, 103, 1) 45%, rgba(255, 255, 255, 1) 100%) 1;
+  }
+
+  .silver-text-gradient {
+    background: linear-gradient(180deg, #c8d6f3, #6b7386 14%, #c8d6f3 25%, #fff 51%, #c8d6f3 69%, #4e5a74 86%, #c8d6f3);
+    background-clip: text;
+    filter: drop-shadow(2px 2px #333);
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* .cut-corner-tr::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 40px solid white;
+    border-left: 40px solid transparent;
+  } */
+}

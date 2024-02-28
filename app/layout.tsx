@@ -5,6 +5,7 @@ import Apptheme from './AppTheme'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { CssBaseline, ThemeProvider } from '@mui/material'
+import NavFooter from './components/NavFooter'
 
 export const metadata: Metadata = {
   title: 'Oh-Hoe',
@@ -23,7 +24,10 @@ export default function RootLayout({
           <CssBaseline />
           <Header />
           <main>{children}</main>
-          <Footer />
+          <footer>
+            <Footer />
+            <NavFooter />
+          </footer>
         </ThemeProvider>
       </body>
     </html>

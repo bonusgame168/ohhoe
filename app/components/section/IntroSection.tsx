@@ -1,37 +1,48 @@
-import { Button } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
 const IntroSection = () => {
   return (
-    <section>
-      {/* Mobile */}
-      <div className='md:hidden relative aspect-[648/672]'>
-        <Image src='/assets/images/banner-header-mobile.webp' alt='banner' fill className='object-fill' priority sizes='100%' />
-        <Link href='https://member.bonusgames168.com/register'>
-          <Button
-            aria-label='go to signup'
-            variant='contained'
-            className='bg-main absolute translate-x-[50%] bottom-[3%] w-[45vw] text-[3.5vw] !rounded-[40px] border border-solid border-white hover:shadow-[0_0_0.25rem_rgba(0,0,0,0.5),-0.125rem_-0.125rem_1rem_rgba(239,71,101,0.5),0.125rem_0.125rem_1rem_rgba(255,154,90,0.5)]'
-          >
-            สมัครสมาชิก
-          </Button>
-        </Link>
-      </div>
-      {/* Desktop */}
-      <div className='hidden md:block relative aspect-[1920/902]'>
-        <Image src='/assets/images/banner-header.webp' alt='banner' fill className='object-fill' priority sizes='100%' />
-        <Link href='https://member.bonusgames168.com/register'>
-          <Button
-            aria-label='go to signup'
-            variant='contained'
-            className='bg-main absolute translate-x-[50%] bottom-[12%] w-[20vw] text-[2.4vw] rounded-[180px] border border-solid border-white hover:shadow-[0_0_0.25rem_rgba(0,0,0,0.5),-0.125rem_-0.125rem_1rem_rgba(239,71,101,0.5),0.125rem_0.125rem_1rem_rgba(255,154,90,0.5)]'
-          >
-            สมัครสมาชิก
-          </Button>
-        </Link>
-      </div>
+    <section id='intro' className='bg-primary_light'>
+      <Container className='py-5'>
+        <Box className='text-center my-5'>
+          <Typography className='text-3xl md:text-5xl font-bold text-amber-900'>OHHOE</Typography>
+          <Typography className='text-lg md:text-xl text-white'>เดิมพันออนไลน์ ลงทุนน้อย กำไรเยอะ</Typography>
+        </Box>
+
+        <Box className='flex flex-col sm:flex-row justify-center md:gap-10 mt-10 text-white'>
+          <Box className='flex items-center gap-x-5'>
+            <Image src='/assets/images/ic-trust-01.webp' alt='deposit & withdraw' width={90} height={90} />
+            <Box className='flex flex-col md:text-center'>
+              <Typography variant='h6' className='font-bold italic'>
+                ฝาก-ถอน ออโต้
+              </Typography>
+              <Typography variant='caption'>การันตีฝากถอนรวดเร็ว ภายใน 5 วินาที</Typography>B
+            </Box>
+          </Box>
+
+          <Box className='flex items-center gap-x-5'>
+            <Image src='/assets/images/ic-trust-02.webp' alt='deposit & withdraw' width={90} height={90} />
+            <Box className='flex flex-col md:text-center'>
+              <Typography variant='h6' className='font-bold italic'>
+                ฝาก-ถอน ไม่มีขั้นต่ำ
+              </Typography>
+              <Typography variant='caption'>ฝากไม่มีขั้นต่ำ ถอนขั้นต่ำ 20 บาท</Typography>
+            </Box>
+          </Box>
+
+          <Box className='flex items-center gap-x-5'>
+            <Image src='/assets/images/ic-trust-03.webp' alt='deposit & withdraw' width={90} height={90} />
+            <Box className='flex flex-col md:text-center'>
+              <Typography variant='h6' className='font-bold italic'>
+                บริการ 24 ชม.
+              </Typography>
+              <Typography variant='caption'>มีแอดมินบริการตลอด 24 ชม. มั่นคง ปลอดภัย</Typography>
+            </Box>
+          </Box>
+        </Box>
+      </Container>
     </section>
   )
 }

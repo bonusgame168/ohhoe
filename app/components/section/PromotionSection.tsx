@@ -4,11 +4,11 @@ import React from 'react'
 
 const PromotionSection = () => {
   return (
-    <section id='promotion' className='bg-[#e5ac73]'>
+    <section id='promotion' className='bg-primary_light'>
       <Container className='py-5'>
         <Box className='text-center my-5'>
-          <Typography className='text-3xl md:text-5xl'>โปรโมชั่น</Typography>
-          <Typography className='text-lg md:text-2xl'>เดิมพันออนไลน์ ลงทุนน้อย กำไรเยอะ</Typography>
+          <Typography className='text-3xl md:text-5xl font-bold text-amber-900'>โปรโมชั่น</Typography>
+          <Typography className='text-lg md:text-xl text-white'>ยินดีต้อนรับสู่ OHHOE สุดยอดเว็บสล็อตอันดับ 1 ในไทย</Typography>
         </Box>
 
         <Box className='grid grid-cols-2 md:grid-cols-3'>
@@ -19,7 +19,7 @@ const PromotionSection = () => {
               alt={`promotion number ${index + 1}`}
               width={609}
               height={684}
-              className='object-contain max-w-full md:px-5'
+              className='object-contain max-w-full md:px-5 transition duration-700 hover:scale-105'
             />
           ))}
         </Box>
