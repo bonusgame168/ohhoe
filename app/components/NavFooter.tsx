@@ -20,7 +20,7 @@ const NavFooter = () => {
           showLabel
           className='text-white'
           label={
-            <Link className='no-underline' href='https://member.bonusgames168.com/register'>
+            <Link className='no-underline' href='/signup'>
               <Typography className='text-white text-[0.65rem]'>สมัครสมาชิก</Typography>
             </Link>
           }
@@ -30,7 +30,7 @@ const NavFooter = () => {
           showLabel
           className='text-[#ffb402]'
           label={
-            <Link className='no-underline' href='https://member.bonusgames168.com/'>
+            <Link className='no-underline' href='/signin'>
               <Typography className='text-[#ffb402] text-[0.65rem]'>เข้าสู่ระบบ</Typography>
             </Link>
           }

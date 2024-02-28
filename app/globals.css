@@ -24,6 +24,47 @@ html {
     -webkit-text-fill-color: transparent;
   }
 
+  .yellow-text-gradient {
+    background: linear-gradient(90deg, rgba(255, 150, 0, 1) 0%, rgba(255, 222, 0, 1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .register-btn {
+    background-color: #0078d0;
+    border: 0;
+    border-radius: 56px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: system-ui, -apple-system, system-ui, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
+    /* font-size: 18px; */
+    /* font-weight: 600; */
+    outline: 0;
+    padding: 16px 21px;
+    /* position: relative; */
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .register-btn:before {
+    background-color: initial;
+    background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+    border-radius: 125px;
+    content: '';
+    height: 50%;
+    left: 4%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s;
+    width: 92%;
+  }
+
   /* .cut-corner-tr::before {
     content: '';
     position: absolute;

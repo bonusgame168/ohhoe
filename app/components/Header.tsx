@@ -10,7 +10,7 @@ const Header = () => {
       <Toolbar disableGutters>
         <Container>
           <Box className='flex items-center justify-between'>
-            <Image width={150} height={150} src={'/assets/images/logo-hrzoft.svg'} alt='logo' />
+            <Image width={150} height={150} src={'/assets/images/main-logo.png'} alt='logo' />
             {/* <Typography variant='h6'>Oh-Hoe</Typography> */}
 
             <Box className='flex items-center gap-x-2'>
@@ -23,7 +23,7 @@ const Header = () => {
               {/* <Link href='/article'> */}
               <Button className='hidden sm:block text-white'>บทความ</Button>
               {/* </Link> */}
-              <Link href='https://member.bonusgames168.com/'>
+              <Link href='/signin'>
                 <Button
                   variant='contained'
                   className='transition duration-100 hover:scale-105 hover:shadow-[#FEB139_0px_0px_15px_4px] bg-[#FEB139] hover:bg-[#ff9d00] rounded-xl border border-solid border-white text-lg shadow-none'
@@ -31,7 +31,7 @@ const Header = () => {
                   เข้าสู่ระบบ
                 </Button>
               </Link>
-              <Link href='https://member.bonusgames168.com/register'>
+              <Link href='/signup'>
                 <Button
                   variant='contained'
                   className='hidden sm:block transition duration-100 hover:scale-105 hover:shadow-[#FF4646_0px_0px_15px_4px] bg-[#FF4646] hover:bg-[#ff0000] rounded-xl border border-solid border-white text-lg shadow-none'

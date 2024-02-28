@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='bg-primary_light'>
+    <div className='bg-[#e48334cc]'>
       <Container className='py-5'>
         <Box className='flex justify-center' sx={{ mt: 4 }}>
           <Image
