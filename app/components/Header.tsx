@@ -14,15 +14,15 @@ const Header = () => {
             {/* <Typography variant='h6'>Oh-Hoe</Typography> */}
 
             <Box className='flex items-center gap-x-2'>
-              <Link href='/'>
+              <Link href='/#banner'>
                 <Button className='hidden sm:block text-white'>หน้าหลัก</Button>
               </Link>
               <Link href='/#promotion'>
                 <Button className='hidden sm:block text-white'>โปรโมชั่น</Button>
               </Link>
-              {/* <Link href='/article'> */}
-              <Button className='hidden sm:block text-white'>บทความ</Button>
-              {/* </Link> */}
+              <Link href='/#article'>
+                <Button className='hidden sm:block text-white'>บทความ</Button>
+              </Link>
               <Link href='/signin'>
                 <Button
                   variant='contained'
