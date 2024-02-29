@@ -1,7 +1,27 @@
 import { Box, Button, Container, Typography } from '@mui/material'
-import Link from 'next/link'
 import React from 'react'
 import ArticleCard from '../ArticleCard'
+
+const articleList = [
+  {
+    image: 'article-1',
+    title: 'm dolor sit amet',
+    description: 'assumes odio, fvtium unde fugiat',
+    timestamp: '1 Mach 2024'
+  },
+  {
+    image: 'article-2',
+    title: 'Le dolor sit amet',
+    description: 'assutum ad, accusantium unde fugiat',
+    timestamp: '1 Mach 2024'
+  },
+  {
+    image: 'article-3',
+    title: 'ipsum doamet',
+    description: 'assuodio, facilis repuupunde fugiat',
+    timestamp: '1 Mach 2024'
+  }
+]
 
 const ArticleSection = () => {
   return (
@@ -11,9 +31,11 @@ const ArticleSection = () => {
           <Typography className='text-3xl md:text-5xl font-bold text-amber-900'>บทความ</Typography>
         </Box>
 
-        <Box className=''>
-          <Box className='flex justify-center md:justify-start my-5'>
-            <ArticleCard />
+        <Box>
+          <Box className='flex justify-center md:justify-start my-5 gap-4'>
+            {articleList.map((item, index) => (
+              <ArticleCard {...item} key={index} />
+            ))}
           </Box>
           <Box className='text-center'>
             <Button

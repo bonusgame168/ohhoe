@@ -12,6 +12,31 @@ html {
   scroll-behavior: smooth;
 }
 
+#promotion {
+  background-image: url('/assets/images/backgrounds/bg-promotion.png');
+  background-image: url('/assets/images/backgrounds/bg-promotion.webp');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+#intro {
+  background-image: url('/assets/images/backgrounds/bg-footer.png');
+  background-image: url('/assets/images/backgrounds/bg-footer.webp');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+#suggestion {
+  background-image: url('/assets/images/backgrounds/bg-suggestion.png');
+  background-image: url('/assets/images/backgrounds/bg-suggestion.webp');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
 @layer utilities {
   .silver-gradient-border {
     border-image: linear-gradient(90deg, rgba(139, 139, 139, 1) 0%, rgba(103, 103, 103, 1) 45%, rgba(255, 255, 255, 1) 100%) 1;

@@ -4,7 +4,7 @@ import React from 'react'
 
 const IntroSection = () => {
   return (
-    <section id='intro' className='bg-primary_light'>
+    <section id='intro'>
       <Container className='py-5'>
         <Box className='text-center my-5'>
           <Typography className='text-3xl md:text-5xl font-bold text-amber-900'>OHHOE</Typography>

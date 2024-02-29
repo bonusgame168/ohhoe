@@ -4,7 +4,7 @@ import React from 'react'
 
 const SuggestSection = () => {
   return (
-    <section id='suggest' className='bg-primary_light'>
+    <section id='suggestion' className='bg-primary_light'>
       <Container className='py-5'>
         <Box className='text-center my-5'>
           <Typography className='text-lg md:text-xl text-white font-extrabold'>
@@ -13,7 +13,7 @@ const SuggestSection = () => {
         </Box>
         <Box className='flex flex-col sm:flex-row my-20 sm:mt-28 lg:gap-10'>
           <Box className='flex-1 relative'>
-            <Image src='/assets/images/ic-rabbit-mascot.webp' alt='rabbit mascot' fill className='object-contain max-w-full' />
+            {/* <Image src='/assets/images/ic-rabbit-mascot.webp' alt='rabbit mascot' fill className='object-contain max-w-full' /> */}
           </Box>
 
           <Box className='flex-1 bg-[#FF4646] relative purple-shadow silver-gradient-border border-solid border-[4px] px-[20px] pb-[20px]'>
@@ -77,8 +77,8 @@ const SuggestSection = () => {
             <Image
               className='transition duration-700 hover:scale-105'
               key={index}
-              src={`/assets/images/game-${index}.webp`}
-              alt='game image'
+              src={`/assets/images/games/game-${index + 1}.webp`}
+              alt={`game image ${index + 1}`}
               width={250}
               height={250}
             />

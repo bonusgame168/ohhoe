@@ -1,10 +1,10 @@
-import { Box, Container, Grid, Typography } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
 
 const PromotionSection = () => {
   return (
-    <section id='promotion' className='bg-primary_light'>
+    <section id='promotion'>
       <Container className='py-5'>
         <Box className='text-center my-5'>
           <Typography className='text-3xl md:text-5xl font-bold text-amber-900'>โปรโมชั่น</Typography>
@@ -12,10 +12,10 @@ const PromotionSection = () => {
         </Box>
 
         <Box className='grid grid-cols-2 md:grid-cols-3'>
-          {Array.from({ length: 6 }).map((_, index: number) => (
+          {Array.from({ length: 9 }).map((_, index: number) => (
             <Image
               key={index}
-              src={`/assets/images/promotions/promotion-${index}.webp`}
+              src={`/assets/images/promotions/pro-${index + 1}.webp`}
               alt={`promotion number ${index + 1}`}
               width={609}
               height={684}
