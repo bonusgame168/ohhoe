@@ -28,7 +28,7 @@ const SignUp = () => {
   }
 
   return (
-    <section className='bg-primary_light'>
+    <section id='authen'>
       <Container className='py-[10vh]'>
         <Box className='flex flex-col sm:flex-row items-center sm:gap-10'>
           <Box
@@ -202,14 +202,6 @@ const SignUp = () => {
             </form>
           </Box>
           <Box className='flex flex-col items-center justify-center flex-1'>
-            <Image
-              src='/assets/images/ic-rabbit-speed.webp'
-              alt='rabit'
-              priority
-              width={400}
-              height={400}
-              className='max-w-full object-contain h-auto'
-            />
             <Typography variant='h4' className='italic text-white text-center xl:text-right break-words text-xl md:text-4xl'>
               ยินดีต้อนรับสู่
               <span className='ml-2 yellow-text-gradient pr-2'>OHHOE</span>

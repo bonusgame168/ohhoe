@@ -22,12 +22,11 @@ const BannerSection = () => {
       {/* Desktop */}
       <div className='hidden md:block relative aspect-[1920/902]'>
         <Image src='/assets/images/banner-header.webp' alt='banner' fill className='object-fill' priority sizes='100%' />
-        {/* <Image src='/assets/images/main-bg.jpeg' alt='banner' fill className='object-fill' priority sizes='100%' /> */}
         <Link href='/signup'>
           <Button
             aria-label='go to signup'
             variant='contained'
-            className='register-btn absolute translate-x-[50%] bottom-[12%] w-[20vw] text-[2.4vw] rounded-[180px] border border-solid border-white hover:shadow-[0_0_0.25rem_rgba(0,0,0,0.5),-0.125rem_-0.125rem_1rem_rgba(239,71,101,0.5),0.125rem_0.125rem_1rem_rgba(255,154,90,0.5)]'
+            className='register-btn italic absolute translate-x-[80%] bottom-[12%] w-[20vw] text-3xl rounded-[180px] border border-solid border-white hover:shadow-[0_0_0.25rem_rgba(0,0,0,0.5),-0.125rem_-0.125rem_1rem_rgba(239,71,101,0.5),0.125rem_0.125rem_1rem_rgba(255,154,90,0.5)] bg-[#ff5900] hover:bg-[#f77b39]'
           >
             สมัครสมาชิก
           </Button>

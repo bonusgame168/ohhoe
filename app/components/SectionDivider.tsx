@@ -6,7 +6,7 @@ const SectionDivider = () => {
     <>
       <Box
         sx={{
-          height: '10px',
+          height: '7px',
           background: 'linear-gradient(338deg, #ffc288, #fea82f, #ff6701)',
           backgroundSize: '240% 240%',
           animation: `gradient 8s ease infinite`

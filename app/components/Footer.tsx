@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='bg-[#e48334cc]'>
+    <div className='bg-[#d84c04]'>
       <Container className='py-5'>
         <Box className='flex justify-center' sx={{ mt: 4 }}>
           <Image
@@ -27,7 +27,7 @@ const Footer = () => {
             </Box>
           ))}
         </Box>
-        <Typography fontSize='small' className='text-center' sx={{ mt: 4 }}>
+        <Typography fontSize='small' className='text-center text-white' sx={{ mt: 4 }}>
           2022-{new Date().getFullYear()} © Copyright OHHOE All rights Reserved.
         </Typography>
       </Container>

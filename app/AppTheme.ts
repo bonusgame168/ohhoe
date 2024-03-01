@@ -33,14 +33,9 @@ const theme = createTheme({
   components: {
     MuiAppBar: {
       styleOverrides: {
-        // root: {
-        //   boxShadow: 'none',
-        //   backgroundColor: '#e48334'
-        // },
         colorPrimary: {
-          backgroundColor: 'rgb(228, 131, 52, 0.8)',
-          backdropFilter: 'blur(6px) !important',
-          boxShadow: 'none'
+          backgroundColor: 'rgb(216, 76, 4)'
+          // backdropFilter: 'blur(6px) !important'
         }
       }
     }

@@ -21,8 +21,8 @@ html {
   height: 100%;
 }
 #intro {
-  background-image: url('/assets/images/backgrounds/bg-footer.png');
-  background-image: url('/assets/images/backgrounds/bg-footer.webp');
+  background-image: url('/assets/images/backgrounds/bg-intro.png');
+  background-image: url('/assets/images/backgrounds/bg-intro.webp');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -31,6 +31,21 @@ html {
 #suggestion {
   background-image: url('/assets/images/backgrounds/bg-suggestion.png');
   background-image: url('/assets/images/backgrounds/bg-suggestion.webp');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+#game {
+  background-image: url('/assets/images/backgrounds/bg-game.png');
+  background-image: url('/assets/images/backgrounds/bg-game.webp');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#authen {
+  background-image: url('/assets/images/backgrounds/bg-auth.png');
+  background-image: url('/assets/images/backgrounds/bg-auth.webp');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -56,18 +71,14 @@ html {
   }
 
   .register-btn {
-    background-color: #0078d0;
     border: 0;
     border-radius: 56px;
     color: #fff;
     cursor: pointer;
     display: inline-block;
     font-family: system-ui, -apple-system, system-ui, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
-    /* font-size: 18px; */
-    /* font-weight: 600; */
     outline: 0;
     padding: 16px 21px;
-    /* position: relative; */
     text-align: center;
     text-decoration: none;
     transition: all 0.3s;
@@ -89,13 +100,4 @@ html {
     transition: all 0.3s;
     width: 92%;
   }
-
-  /* .cut-corner-tr::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-top: 40px solid white;
-    border-left: 40px solid transparent;
-  } */
 }
