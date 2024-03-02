@@ -1,6 +1,7 @@
 import { Box, Button, Container, Typography } from '@mui/material'
 import React from 'react'
 import ArticleCard from '../ArticleCard'
+import Image from 'next/image'
 
 const articleList = [
   {
@@ -25,7 +26,7 @@ const articleList = [
 
 const ArticleSection = () => {
   return (
-    <section id='article' className='bg-primary_light'>
+    <section id='article'>
       <Container className='py-5'>
         <Box className='text-center my-5'>
           <Typography className='text-3xl md:text-5xl font-bold text-amber-900'>บทความ</Typography>

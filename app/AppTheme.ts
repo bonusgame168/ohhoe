@@ -1,11 +1,8 @@
 'use client'
-import { Noto_Sans_Thai } from 'next/font/google'
 import { createTheme } from '@mui/material/styles'
+import { Prompt } from 'next/font/google'
 
-const noto_sans_thai = Noto_Sans_Thai({
-  weight: ['300', '400', '500', '600'],
-  subsets: ['thai', 'latin']
-})
+const prompt = Prompt({ subsets: ['thai'], weight: ['200', '400', '700'], display: 'swap' })
 
 const theme = createTheme({
   palette: {
@@ -28,7 +25,8 @@ const theme = createTheme({
     // }
   },
   typography: {
-    fontFamily: noto_sans_thai.style.fontFamily
+    fontSize: 16,
+    fontFamily: prompt.style.fontFamily
   },
   components: {
     MuiAppBar: {

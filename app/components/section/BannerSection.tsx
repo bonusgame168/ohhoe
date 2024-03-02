@@ -1,4 +1,4 @@
-import { Button } from '@mui/material'
+import { Box, Button } from '@mui/material'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -7,7 +7,7 @@ const BannerSection = () => {
   return (
     <section id='banner'>
       {/* Mobile */}
-      <div className='md:hidden relative aspect-[648/672]'>
+      <Box className='md:hidden relative aspect-[648/672]'>
         <Image src='/assets/images/banner-header-mobile.webp' alt='banner' fill className='object-fill' priority sizes='100%' />
         <Link href='/signup'>
           <Button
@@ -18,9 +18,9 @@ const BannerSection = () => {
             สมัครสมาชิก
           </Button>
         </Link>
-      </div>
+      </Box>
       {/* Desktop */}
-      <div className='hidden md:block relative aspect-[1920/902]'>
+      <Box className='hidden md:block relative aspect-[1920/902]'>
         <Image src='/assets/images/banner-header.webp' alt='banner' fill className='object-fill' priority sizes='100%' />
         <Link href='/signup'>
           <Button
@@ -31,7 +31,7 @@ const BannerSection = () => {
             สมัครสมาชิก
           </Button>
         </Link>
-      </div>
+      </Box>
     </section>
   )
 }

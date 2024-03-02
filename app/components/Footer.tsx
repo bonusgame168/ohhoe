@@ -1,10 +1,57 @@
-import { Box, Typography, Container, useMediaQuery, Theme } from '@mui/material'
+import { Box, Typography, Container } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
 
+// const Slider = dynamic(() => import('@/components/Slider'), { ssr: false })
+
 const Footer = () => {
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 3000,
+  //   slidesToShow: 10,
+  //   slidesToScroll: 1,
+  //   arrows: false,
+  //   autoplay: true,
+  //   autoplaySpeed: 1000,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1400,
+  //       settings: {
+  //         slidesToShow: 8
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 1000,
+  //       settings: {
+  //         slidesToShow: 6
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 800,
+  //       settings: {
+  //         slidesToShow: 3
+  //       }
+  //     }
+  //   ]
+  // }
   return (
-    <div className='bg-[#d84c04]'>
+    <div id='footer'>
+      {/* <Box className='pt-2'>
+        <Slider {...settings}>
+          {Array.from({ length: 13 }).map((_, index: number) => (
+            <div key={index} className='!inline-flex justify-center'>
+              <Image
+                src={`/assets/images/bands/ic-bet-band-${index}.webp`}
+                alt='game image'
+                width={79}
+                height={40}
+                className='object-contain'
+              />
+            </div>
+          ))}
+        </Slider>
+      </Box> */}
       <Container className='py-5'>
         <Box className='flex justify-center' sx={{ mt: 4 }}>
           <Image

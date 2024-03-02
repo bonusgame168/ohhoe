@@ -10,19 +10,17 @@ const Header = () => {
       <Toolbar disableGutters>
         <Container>
           <Box className='flex items-center justify-between'>
-            <Image width={150} height={150} src={'/assets/images/logo-ohhoe.webp'} alt='logo' />
-            {/* <Typography variant='h6'>Oh-Hoe</Typography> */}
-
+            <Image width={100} height={100} src={'/assets/images/logo-ohhoe.webp'} alt='logo' />
             <Box className='flex items-center gap-x-5'>
-              <Link href='/#banner'>
+              <Link href='/'>
                 <Button className='hidden sm:block text-white'>หน้าหลัก</Button>
               </Link>
               <Link href='/#promotion'>
                 <Button className='hidden sm:block text-white'>โปรโมชั่น</Button>
               </Link>
-              <Link href='/#article'>
+              {/* <Link href='/#article'>
                 <Button className='hidden sm:block text-white'>บทความ</Button>
-              </Link>
+              </Link> */}
               <Box className='flex gap-x-4'>
                 <Link href='/signin'>
                   <Button

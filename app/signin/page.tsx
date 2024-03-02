@@ -23,20 +23,12 @@ const SignIn = () => {
 
   return (
     <section id='authen'>
-      <Container className='py-[10vh]'>
-        <Box className='flex flex-col sm:flex-row items-center sm:gap-10'>
-          <Box
-            sx={{ px: 2, pb: 4, pt: 8 }}
-            className='relative flex flex-col justify-center flex-1 rounded-2xl text-white shadow-[0 0 15px 0 #210231] bg-[rgba(0,0,0,0.3)]'
-          >
-            <Image
-              className='absolute -top-20 right-0 left-0 mx-auto'
-              src='/assets/images/ic-rabbit-money.webp'
-              alt='small rabbit mascot'
-              width={100}
-              height={100}
-            />
-
+      <Container className='py-[15vh]'>
+        <Box className='flex flex-col sm:flex-row items-center'>
+          <Box className='flex-1 flex flex-col justify-center rounded-2xl text-white shadow-[0 0 15px 0 #210231] bg-[rgba(0,0,0,0.3)]'>
+            <Box>
+              <Image className='' src='/assets/images/logo-ohhoe.webp' alt='small rabbit mascot' width={150} height={150} />
+            </Box>
             <form onSubmit={handleSubmit(handleSubmitForm)}>
               <Box className='flex flex-col' sx={{ gap: 2, p: 2 }}>
                 <Controller
@@ -88,12 +80,12 @@ const SignIn = () => {
               </Box>
             </form>
           </Box>
-          <Box className='flex flex-col items-center justify-center flex-1'>
-            <Typography variant='h4' className='italic text-white text-center xl:text-right break-words text-xl md:text-4xl'>
+          <Box className='flex-1 relative flex flex-col items-center justify-center'>
+            <Typography variant='h4' className='italic  text-center xl:text-right break-words text-xl md:text-4xl'>
               ยินดีต้อนรับสู่
               <span className='ml-2 yellow-text-gradient pr-2'>OHHOE</span>
             </Typography>
-            <Typography variant='h6' className='text-white text-center xl:text-right text-xl md:text-2xl'>
+            <Typography variant='h6' className=' text-center xl:text-right text-xl md:text-2xl'>
               หากคุณยังไม่มีบัญชี
               <Link href='/signup' className='ml-2 yellow-text-gradient pr-2'>
                 สมัครสมาชิก

@@ -13,7 +13,7 @@ const SuggestSection = () => {
         </Box>
         <Box className='flex flex-col sm:flex-row my-20 sm:mt-28 lg:gap-10'>
           <Box className='flex-1 relative'>
-            {/* <Image src='/assets/images/ic-rabbit-mascot.webp' alt='rabbit mascot' fill className='object-contain max-w-full' /> */}
+            <Image src='/assets/images/dragon-green.webp' alt='dragon mascot' fill className='object-contain' />
           </Box>
 
           <Box className='flex-1 bg-[#FF4646] relative purple-shadow silver-gradient-border border-solid border-[4px] px-[20px] pb-[20px]'>
